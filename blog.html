@@ -3,12 +3,37 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Web Dev Blog</title>
+		<link rel="stylesheet" href="style.css" media="screen">
 	</head>
 	<body>
-		<center><img src="coding-blog.png" height="400" width="700"/></center>
+
+		
+		<header>
+      	<!-- The <i> tag below includes the sticky note icon from Font Awesome -->
+	      <h1><a href="/">My Webspace</a></h1>
+
+	      <nav>
+	        <ul class="navbar-list">
+	          <li class="navbar-item"><a href="http://engr.oregonstate.edu/~whitlocn/">Home</a></li>
+	          <li class="navbar-item"><a href="http://engr.oregonstate.edu/~whitlocn/blog.html">Blog</a></li>
+	          <li class="navbar-item"><a href="#Assignment_0">Assignment 0</a></li>
+	          <li class="navbar-item"><a href="assignment_1.html">Assignment 1</a></li>
+	          <li class="navbar-item"><a href="#Assignment_2">Assignment 2</a></li>
+	          <li class="navbar-item"><a href="#Assignment_3">Assignment 3</a></li>
+	          <li class="navbar-item"><a href="#Assignment_4">Assignment 4</a></li>
+	          <li class="navbar-item"><a href="#Assignment_5">Assignment 5</a></li>
+	          <li class="navbar-item navbar-right"><a href="log_out.gif">Log out</a></li>
+	        </ul>
+	      </nav>
+
+   		</header>
+
+   		<div class="Main_Image">
+			<center><img src="coding-blog.png" height="400" width="700"/></center>
+		</div>
 
 		<h1 align="middle">Welcome to the Web Development Blog of Nathaniel Whitlock</h1>
-
+<!--
 		<h3>Quick Links:</h3>
 		<ul>
 			<a href="#Assignment_1"><li>Assignment 1</li></a>
@@ -17,10 +42,11 @@
 			<a href="#Assignment_4"><li>Assignment 4</li></a>
 			<a href="#Assignment_5"><li>Assignment 5</li></a>
 		</ul>
+-->
 
 		<h2 align="middle">This page will contain descriptions and reflections on my experiences throughout the term.</h2>
 
-		<a name="Assignment_0"><h2>Assignment 0 - September 24th, 2016</h2></a>
+		<a name="Assignment_0"><h2>Assignment 0 -- September 24th, 2016</h2></a>
 			<p>
 				<ul>
 					<h3>Challenges, troubles and solutions:</h3>
@@ -58,12 +84,91 @@
 					</li>
 				</ul>
 			</p>
-		<a name="Assignment_1"><h2>Assignment 1</h2></a>
+
+		<a name="Assignment_1"><h2>Assignment 1 -- October 10th, 2016</h2></a>
+			<p>
+				<ul>
+					<h3>Problems encountered in assignment 1:</h3>
+					<li>
+						This assingment was pretty straigt forward. The main thing that helped
+						me when I was developing the style.css file for this assingment was looking
+						through the DOM outline for the index.html file. By utilizeing the Chrome
+						browsers inspection tool I was able to easily identify classes which were made,
+						as well as gain a more sound understanding of the tag structure of the html.
+						Once you know how the site is layed out it is much easier to appy CSS rules.
+
+						<br>
+						
+						One of the major problems that I ran into during this assignment was a general
+						lack of understanding of the difference between different CSS position values
+						(ie. static, absolute, fixed, relative, etc.). By experimenting with different
+						positioning values I was able to gain a more fundamental understanding of how each
+						value affects the object of focus.
+					</li> 
+
+					<h3>What was learned and what was already known:</h3>
+					<li>
+						Before starting this assignment there were three seperate instances where I worked
+						on the development of a function stylesheet for a website. Each of these occurances
+						have been on working for a web site for someone close to me or a business/local 
+						non-profit which have needed help setting up a web site. Since CSS relies mostly
+						on html object specification and rules which alter the style of the web site
+						output, it is not a complicated language to understand.
+					</li>
+				</ul>
+			</p>
 		<a name="Assignment_2"><h2>Assignment 2</h2></a>
+		<p>
+				<ul>
+					<h3>Problems encountered in assignment 2:</h3>
+					<li>
+						The main problem that I ran into while working through this assignment was that
+						I was not very experienced with javascript. When I was working through the event
+						handler which provided the interaction for the Add ToDo note, I had a rough time
+						geting the all of the elements which composed a stick note into a correct final
+						form. But after a bit of reading I was able to just think about which elements needed
+						nested in which divs, then treat it like a flow layout that stacks each component on
+						the other. Once each of the notes divs were set up, I just appended then as child
+						nodes of the section container which acted as the note background.
+
+						<br>
+
+						Another thing that I had an issue with was getting a dismiss symbol on the new
+						notes in the same method that the manually set set up ones were. I first tried
+						to create a text node with had the string, '& times;' -> &times;. As you can see
+						the problem is that the text node displays the content as text and does not 
+						call the times symbol. In order to get around this I chose to use the innerHTML
+						function to insert the characters in a format where it would display as a symbol.			
+					</li> 
+
+					<h3>What was learned and what was already known:</h3>
+					<li>
+						In the past I have created two versions of a website for a local community garden,
+						the first was done from the ground up and the second was done in Wordpress. The
+						reason that I also created a Wordpress site was in hope to provided a more userfriendly
+						means of others appending content and managing the layout. It turned out that the 
+						Wordpress interface was still to complex for the users to add content to the site
+						so I eventually stopped paying attention to managing content. During that experience
+						I was exposed to HTML, CSS, and some javascript. This assignment helped me to learn
+						more about isolating elements through a number of methods as well as how to add
+						interactivity to objects on the page. This is very exciting because I just got
+						put on a team at HP that builds in house web applications for engineers and chemists
+						so that they can easily visual print performance data and/or data on the physical
+						properties. I am looking forward to working with my team on the final project as well
+						as getting into the backend portion of the class.
+					</li>
+				</ul>
+			</p>
 		<a name="Assignment_3"><h2>Assignment 3</h2></a>
 		<a name="Assignment_4"><h2>Assignment 4</h2></a>
 		<a name="Assignment_5"><h2>Assignment 5</h2></a>
 		
 
 	</body>
+
+		<footer>
+	      <div class="copyright">
+	        Copyright &copy; 2016
+	      </div>
+	 	</footer>
 	</html>
